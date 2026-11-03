@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: fei36-perps-funding-pulse
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "8787"
+      - key: NETWORK
+        value: base-sepolia
+      - key: DEFAULT_PRICE
+        value: "0.01"
+      - key: FACILITATOR_URL
+        value: https://facilitator.daydreams.systems
+      - key: ADDRESS
+        sync: false
