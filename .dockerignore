@@ -1,0 +1,12 @@
+node_modules
+.git
+*.log
+test-results.txt
+.env
+.env.*
+keep-tunnel.sh
+STATUS.json
+test
+test_live_venues.py
+*.md
+!DEPLOY.md
