@@ -1,0 +1,28 @@
+{
+  "name": "perps-funding-pulse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Fetch current funding rate and open interest for perps markets (daydreamsai agent-bounties #8)",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "tsx src/server.ts",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --passWithNoTests 2>/dev/null || node --test test/*.test.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "@lucid-dreams/agent-kit": "^0.2.24",
+    "hono": "^4.6.0",
+    "tsx": "^4.23.15",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

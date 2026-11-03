@@ -1,0 +1,30 @@
+{
+  "path": "daydreamsai-perps-funding-pulse",
+  "bounty_usd": 1000,
+  "issue": "https://github.com/daydreamsai/agent-bounties/issues/8",
+  "started_at_utc8": "2026-10-30 11:50:59 (UTC+8)",
+  "rechecked_at_utc8": "2026-11-03 11:50:25 (UTC+8)",
+  "local_scaffold": true,
+  "agent_kit_wired": true,
+  "agent_kit_version": "0.2.24",
+  "agent_app_entry": "src/agent-app.ts",
+  "tests": {
+    "python_live_venues_prior": "4/4 pass (okx, hyperliquid, dydx, gate); binance optional flaky 451",
+    "node_smoke": "4/4 pass (re-run this cycle)"
+  },
+  "gh_auth": "fei36bot classic PAT READY (repo scope)",
+  "submit_path_check_this_run": {
+    "issue_submission_text": "Submission is a PR into this repo linking the issue - first in first served if the bounty has been completed",
+    "acceptance_requires_x402_domain": true,
+    "competitor_example_pr": "https://github.com/daydreamsai/agent-bounties/pull/388 (live https://funding-pulse.onrender.com + HTTP 402)",
+    "pr_opened_this_run": false,
+    "reason_no_pr": "High-hit rule: incomplete without public x402-reachable domain; opening PR would be spray against acceptance"
+  },
+  "submit_blocked": [
+    "Must be deployed on a domain and reachable via x402 (acceptance criteria) \u2014 no zero-cost public host/creds on box this cycle",
+    "paymentsFromEnv / PAYMENTS_* not configured for live x402"
+  ],
+  "payout_wallet_evm": "0xDFb67e2ed78F174e76Cf5Cfc87Ab39733f7a5c62",
+  "eta_to_submit_if_unblocked": "2-6h after free/zero-cost x402 domain deploy (e.g. Render/CF worker) + payments env",
+  "no_progress_invented": true
+}
